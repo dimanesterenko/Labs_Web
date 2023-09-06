@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форми</title>
+</head>
+<body>
+    <h2>Лабораторна робота №1</h2>
+    <h2>Робота з формами</h2>
+    <h2>Виконав Нестеренко Дмитро</h2>
+    <h2>студент групи КН-31</h2>
+    <h2>Варіант-6</h2>
+    <a href="index.html">На головну</a>
+    <h3>Завдання</h3>
+    <p>Необхідно розробити форму для введення товару до інтернет-магазину.
+        Необхідно заповнити наступні данні:</p>
+    <ul>
+        <li>
+            дані про товар, включають назву товару, тип товару(вибирається зі
+            списку), опис, поточну ціну, ціну зі знижкою;
+        </li>
+        <li>
+            дані про виробника, включають назву, електрону пошту, посилання на
+        веб-сайт, коментарі.
+        </li>
+    </ul> 
+    <form method="post">
+        <fieldset>
+            <legend >Товар</legend>
+            <label for="item_name">
+                Назва товару 
+                <input id="item_name" type="text">
+            </label>
+            <label>
+                Тип товару
+                <select>
+                    <option>Товари для дому</option>
+                    <option>Зоотовари</option>
+                    <option>Електроніка</option>
+                    <option>Одяг та взуття</option>
+                    <option>Побутова техніка</option>
+                    <option>Інше</option>
+                </select>
+            </label>
+            
+            <label for="item_desc">
+                Опис товару
+                <textarea id="item_desc" name="description" rows="1" cols="30">
+                </textarea>
+            </label>
+            <br><br>
+            <label for="item_price">
+                Ціна товару
+                <input id="item_price" type="number" min="1">
+            </label>
+            <label for="item_price_discount">
+                Ціна товару зі знижкою
+                <input id="item_price_discount" type="number" min="1">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Виробник</legend>
+            <label for="provider_name">
+                Назва виробника
+                <input id="provider_name" type="text">
+            </label>
+            <label for="provider_email">
+                Електронна пошта 
+                <input type="email" id="provider_email">
+            </label>
+            <label for="provider_link">
+                Посилання 
+                <input type="url" id="provider_link">
+            </label>
+            <br><br>
+            <label for="comments">
+                Коментарі
+                <textarea id="comments" name="comm" rows="2" cols="30">
+                </textarea>
+            </label>
+        </fieldset>
+        <button type="submit">Відправити</button>
+    </form>
+</body>
+</html>
