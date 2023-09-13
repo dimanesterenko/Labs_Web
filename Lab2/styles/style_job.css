@@ -1,0 +1,27 @@
+body{
+    background: radial-gradient(circle, rgba(45,133,212,1) 0%, rgba(78,242,255,1) 100%);
+    font-size: 24px;
+}
+img{
+    margin: 20px;
+    border-radius: 10px;
+}
+.p_blue_italic{
+    color: rgb(0, 0, 94);
+    font-style: italic;
+}
+.p_underscore{
+    text-decoration: underline;
+}
+span{
+    color: blue;
+}
+
+.p_blue_italic img{
+    float: left;
+}
+.p_last_blue img{
+    float: right;
+    width: 450px;
+    height: auto;
+}

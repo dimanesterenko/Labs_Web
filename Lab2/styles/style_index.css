@@ -1,0 +1,10 @@
+h1,h2{
+    text-align: center;
+}
+body{
+    background-image:radial-gradient(circle, rgba(45,133,212,1) 0%, rgba(78,242,255,1) 100%);
+    color: rgb(2, 2, 116);
+}
+a{
+    color: #890101;
+}
