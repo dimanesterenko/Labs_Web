@@ -1,0 +1,14 @@
+:root{
+    --width:1440px;
+    --width-header:1440px;
+    --width-menu:1440px;
+    --width-main:996px;
+    --width-sidebar:444px;
+    --width-footer:444px;
+    --font-family-base:'Bebas Neue', sans-serif;
+    --height-header:167px;
+    --height-menu:154px;
+    --height-main:1400px;
+    --height-sidebar:1223px;
+    --height-footer:176px;
+}
