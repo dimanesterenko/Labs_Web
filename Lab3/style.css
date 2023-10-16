@@ -16,6 +16,7 @@ span{
     padding: 20px;
 }
 .header{
+    /*position: fixed;*/
     width: 1440px;
     height: 167px;
     flex-shrink: 0;
@@ -25,7 +26,6 @@ span{
     font-size: 128px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,7 +65,7 @@ a{
 /*style of main*/
 .main{
     width: 996px;
-    height: 1400px;
+    height: auto;
     flex-shrink: 0;
     background: #420202;
 }
@@ -120,13 +120,19 @@ a{
     border-radius: 5px;
     margin-bottom: 30px;
 }
+.card a:hover{
+    background-color: #5D0000;
+}
 
 .sidebar{
     width: 446px;
-    height: 1300px;
+    height: 2000px;
     flex-shrink: 0;
     background: #2E0303;
     float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .footer{
     width: 100%;
@@ -154,4 +160,68 @@ a{
     margin-top: 30px;
     background: url(image\ 3.png), lightgray 50% / cover no-repeat;
     mix-blend-mode: screen;
+}
+
+.clear{
+    clear: both;
+    margin-bottom: 50px;
+}
+
+.about_ri img{
+    float: left;
+    margin: 20px;
+    padding-bottom:50px;
+    padding-right: 25px;
+}
+.about_ri{
+    margin: 80px;
+}
+.about_ri h1, .dates_ri h1, .sect_location h1{
+    text-align: center;
+    color: #FFF;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 30px;
+}
+.about_ri p{
+    color: #FFF;
+    font-family: Bebas Neue;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%;
+}
+
+.ul_dates{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+.ul_dates li {
+    color: #FFF;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+.ul_dates li a {
+    text-decoration: none;
+    color: #FFF;
+}
+.label_ri img{
+    mix-blend-mode: overlay;
+}
+
+.sect_location p{
+    color: #FFF;
+    text-align: center;
+    font-family: Bebas Neue;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
 }
