@@ -72,3 +72,7 @@ body{
     margin-top: 0; /* Убираем верхний отступ у заголовка */
     font-size: 36px;
 }
+.clear{
+    clear: both;
+    margin-bottom: 270px;
+}

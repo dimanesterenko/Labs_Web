@@ -98,7 +98,7 @@ a{
     margin-left: auto;
     margin-right: auto;
     width: 380px;
-    height: 399px;
+    height: auto;
     flex-shrink: 0;
     border: 5px solid #000;
     background-blend-mode: overlay;
@@ -173,9 +173,7 @@ a{
     padding-bottom:50px;
     padding-right: 25px;
 }
-.about_ri{
-    margin: 80px;
-}
+
 .about_ri h1, .dates_ri h1, .sect_location h1{
     text-align: center;
     color: #FFF;
