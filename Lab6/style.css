@@ -19,3 +19,29 @@ main{
     margin-top: 0;
     padding: 20px;
 }
+
+.labs ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .labs li {
+    margin-right: 10px;
+  }
+  
+  .labs a {
+    text-decoration: none;
+    color: #000; 
+    padding: 5px 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-weight: bold;
+  }
+  
+  .labs a:hover {
+    background-color: #f0f0f0;
+  }
+  

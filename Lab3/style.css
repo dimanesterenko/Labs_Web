@@ -1,5 +1,11 @@
 @import url(base.css);
 @import url(reset.css);
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
 .container{
     width: var(--width);
     background-color:  #420202;
@@ -126,10 +132,10 @@ a{
 
 .sidebar{
     width: 446px;
-    height: 2000px;
+    height: auto;
     flex-shrink: 0;
     background: #2E0303;
-    float: right;
+    /*float: right;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -174,7 +180,7 @@ a{
     padding-right: 25px;
 }
 
-.about_ri h1, .dates_ri h1, .sect_location h1{
+.about_ri h1, .dates_ri h1, .sect_location h1, .bom h1{
     text-align: center;
     color: #FFF;
     font-size: 64px;
@@ -222,4 +228,13 @@ a{
     font-weight: 400;
     line-height: normal;
     margin-top: 20px;
+}
+.brom{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.bom {
+    text-align: center; 
+    font-size: 24px; 
 }

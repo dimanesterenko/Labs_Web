@@ -49,7 +49,7 @@ body{
 }
 
 
-.first_main_sect {
+.first_main_sect,.sec_main_sect {
     display: flex; /* Используем flexbox для размещения элементов в ряд */
     width: 100%; /* Устанавливаем ширину на 100% */
     padding: 0; /* Убираем внутренние отступы */
@@ -75,4 +75,19 @@ body{
 .clear{
     clear: both;
     margin-bottom: 270px;
+}
+
+.sec_main_sect{
+    margin-left: 50px;
+}
+.block{
+    width: 480px;
+}
+.block1 {
+    margin-right: 15px; 
+}
+
+.img_portret{
+    width: 380px;
+    height: auto;
 }

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2</title>
+    <link rel="stylesheet" href="../Lab6/style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h1>Проєктування та розробка веб-застосунків</h1>
+    <h2>Лабораторна робота №2. JavaScript</h2>
+    <h2>Виконав Нестеренко Дмитро</h2>
+    <h2>Варіант-6</h2>
+    <section class="labs">
+        <ul>
+            <li><a href="../Lab6/index.html">Лабораторна робота №1</a></li>
+            <li><a href="../Lab7/index.html">Лабораторна робота №2</a></li>
+            <li><a href="index.html">Лабораторна робота №3</a></li>
+            <li><a href="index.html">Лабораторна робота №4</a></li>
+        </ul>
+    </section>
+    </header>
+    <main>
+        <h2>Завдання</h2>
+        <div class="task">
+            <p>
+                На Вашій сторінці є малюнок. При наведенні миші на цей малюнок він повинен змінитися. Коли Ви відведете мишку в сторону, малюнок має набути початкового вигляду.
+                Ввести No телефона (поле вводу) і назву міста (з клавіатури).
+                Якщо введено місто, якого немає в списку, то повідомити про це користувача, інакше вивести No телефона, поставивши перед ним код міста.
+            </p>
+        </div>
+        <h2>Виконання</h2>
+        <div class="res">
+            <div id="image-container">
+                <a href=""><img  id="my-image" src="day.jpg" alt="eifel"></a>
+            </div>
+            <div id="task2">
+                <label for="cityInput">Назва міста:</label>
+                <input type="text" id="cityInput">
+                <br>
+                <label for="phoneInput">Номер телефону:</label>
+                <input type="text" id="phoneInput">
+                <br>
+                <button onclick="findPhone()">Знайти телефон</button>
+                <div id="result"></div>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
