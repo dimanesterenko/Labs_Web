@@ -1,0 +1,11 @@
+body{
+    background-image: url(https://imgproxy.natucate.com/98Mize7WWle7j5foTtN8KtMXcQZtAzWxRCRORLXz7v8/rs:fill/g:ce/w:3840/h:2160/aHR0cHM6Ly93d3cubmF0dWNhdGUuY29tL21lZGlhL3BhZ2VzL3JlaXNlemllbGUvZGUzNTYyODktY2E5OC00YmVmLWE1M2UtMDgzNDBkMjk1ZjUwLzE2NmRlZWE3OTAtMTY3OTQ4NjgyOS9tYWxlZGl2ZW4tbGFlbmRlcmluZm9ybWF0aW9uZW4tc3RyYW5kLXBhbm9yYW1hLW5hdHVjYXRlLmpwZw);
+    background-size: cover;
+}
+.card{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding: 11px 19px;
+    margin: 0 40px;
+}
