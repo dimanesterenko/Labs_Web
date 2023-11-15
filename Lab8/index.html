@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3</title>
+    <link rel="stylesheet" href="../Lab6/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+<header>
+    <h1>Проектування та розробка веб-застосунків</h1>
+    <h2>Лабораторна робота №3. JavaScript</h2>
+    <h2>Виконав Нестеренко Дмитро</h2>
+    <h2>Варіант-6</h2>
+    <section class="labs">
+        <ul>
+            <li><a href="../Lab6/index.html">Лабораторна робота №1</a></li>
+            <li><a href="../Lab7/index.html">Лабораторна робота №2</a></li>
+            <li><a href="../Lab8/index.html">Лабораторна робота №3</a></li>
+            <li><a href="index.html">Лабораторна робота №4</a></li>
+        </ul>
+    </section>
+    </header>
+    <main>
+        <h2>Завдання 1</h2>
+        <div class="task">
+            <p>
+                У поле вводу вводиться країна і натискається Enter. При натисканні на
+                Enter зробіть так, щоб введені країни записувалися в абзац під поле вводу через
+                кому. Тобто по кожному натискання Enter в абзац будуть додаватися все нові і
+                нові країни.
+            </p>
+        </div>
+        <h2>Виконання</h2>
+        <div class="res">
+            <input type="text" id="countryInput" onkeydown="addCountry(event)">
+            <p id="countryList"></p>
+        </div>
+    </main>
+    <main>
+        <h2>Завдання 2</h2>
+        <div class="task">
+            <p>
+                Дана таблиця з числами. При натисканні на кнопку знайдіть комірку, в
+                якій зберігається максимальне число, і зробіть її фон червоним.
+            </p>
+        </div>
+        <h2>Виконання</h2>
+        <table id="myTable">
+            <tr>
+                <td>55</td>
+                <td>10</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>25</td>
+                <td>30</td>
+            </tr>
+        </table>
+    
+        <button onclick="highlightMaxCell()">Підсвітити комірку</button>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
