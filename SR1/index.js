@@ -1,8 +1,6 @@
 
 grouping = new Array();
 
-//clouds
-
 async function populate(){
     const requestURL = "https://api.jsonbin.io/v3/b/6552840554105e766fcf941c";
     const request = new Request(requestURL);

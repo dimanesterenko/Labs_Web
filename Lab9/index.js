@@ -1,4 +1,4 @@
- class Refrigerator {
+class Refrigerator {
     constructor(color, brand, model, price) {
         this.color = color;
         this.brand = brand;

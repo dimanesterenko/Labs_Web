@@ -1,0 +1,72 @@
+/* Default styles for larger screens */
+body {
+    font-size: 16px;
+}
+
+/* Styles for smaller screens */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header h2 {
+        font-size: 1.2em;
+    }
+    
+    .labs ul {
+        flex-direction: column;
+    }
+
+    .labs li {
+        margin-bottom: 10px;
+    }
+
+    .task p {
+        font-size: 0.9em;
+    }
+
+    #task2 label, #task2 input, #task2 button {
+        font-size: 0.9em;
+    }
+    #my-image {
+        max-width: 100%; 
+        height: auto;
+    }
+    button{
+        max-width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    header h2 {
+        font-size: 1em;
+    }
+    
+    .labs li {
+        margin-bottom: 8px;
+    }
+
+    .task p {
+        font-size: 0.8em;
+    }
+
+    #task2 label, #task2 input, #task2 button {
+        font-size: 0.8em;
+    }
+    button{
+        max-width: 100%;
+    }
+}

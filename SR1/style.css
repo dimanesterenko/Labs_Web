@@ -9,3 +9,12 @@ body{
     padding: 11px 19px;
     margin: 0 40px;
 }
+main{
+    background-color: rgba(0, 255, 255, 0.8);
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

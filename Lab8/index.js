@@ -36,6 +36,5 @@ function highlightMaxCell() {
 
     if (maxCell) {
         maxCell.style.backgroundColor = 'red';
-        document.querySelector('restext').innerText = 'Максимальне число: ' + maxCellValue;
     }
 }
