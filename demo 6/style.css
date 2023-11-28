@@ -1,0 +1,47 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 ;
+}
+h2{
+    margin: 0 0 ;
+}
+header{
+    color: rgb(13, 1, 37);
+    background-image: url('https://images.pexels.com/photos/1287142/pexels-photo-1287142.jpeg?cs=srgb&dl=pexels-eberhard-grossgasteiger-1287142.jpg&fm=jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 15px;
+    text-align: center;
+}
+
+main{
+    background: radial-gradient(circle, rgba(45,133,212,1) 0%, rgba(78,242,255,1) 100%);
+    margin-top: 0;
+    padding: 20px;
+}
+
+.labs ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .labs li {
+    margin-right: 10px;
+  }
+  
+  .labs a {
+    text-decoration: none;
+    color: #000; 
+    padding: 5px 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-weight: bold;
+  }
+  
+  .labs a:hover {
+    background-color: #f0f0f0;
+  }
+  
