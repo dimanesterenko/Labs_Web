@@ -1,122 +1,155 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-    background-color: white;
-    font-family: 'Playfair Display', serif;
-    margin-left: 80px;
-    margin-right: 105px;
-}
-.header{
-    width: 1415px;
-    height: 786px;
+@font-face {
+    font-family: "Playfair";
+    src: url(../font/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+    font-weight: 700;
+    font-style: normal;
 }
 
-.main_menu {
-    display: flex; /* Устанавливаем flexbox */
-    justify-content: flex-end; /* Размещаем элементы в конце (справа) */
+@font-face {
+    font-family: "Inter";
+    src: url(../font/Inter/Inter-VariableFont_slnt,wght.ttf);
+    font-weight: 400;
+    font-style: normal;
 }
 
-.menu_item {
-    margin-right: 10px; /* Расстояние между пунктами меню */
+@font-face {
+    font-family: "Muli";
+    src: url(../font/Mulish/Mulish-VariableFont_wght.ttf);
+    font-weight: 700;
+    font-style: normal;
 }
-.main_menu a{
-    text-decoration: none;
+
+.header {
+    padding-top: 2.69vw;
 }
-/* Стили для кнопок "Login" и "Register" */
-.bright_but {
-    display: inline-block;
-    background-color: #ff6600; /* Цвет фона */
-    padding: 5px 10px; /* Отступы внутри кнопки */
-    border-radius: 5px; /* Скругление углов */
-    color: #fff; /* Цвет текста */
+
+.p-header {
+    font-family: Inter;
+    color: #B8BECD;
+    margin-bottom: 0px;
 }
-.box_title h1{
-    color: #202336;
-    font-family: Playfair Display;
-    font-size: 64px;
+
+.body {
+    width: 100vw;
+}
+
+.explore-block {
+    padding-top: 5vw;
+}
+
+.text-1, .text-3, .text-5, .text-7 {
+    font-family: "Playfair";
     font-style: normal;
     font-weight: 700;
-    line-height: 80px; 
 }
-.side_picture{
-    width: 687px;
-    height: 654px;
-    float: right; /* Перемещаем блок вправо */
-    margin-left: 20px;
+
+.text-2, .text-4, .text-6, .text-8, .text-9, .text-10, .text-11, .text-12, .text-13 {
+    font-family: "Inter";
+    font-style: normal;
+}
+
+.line-1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-size: 300;
+    font-weight: 200;
+    color: #202336;
+}
+
+.way-block {
+    padding-top: 16.87vw;
+}
+
+.text-4 {
+    font-family: "Muli";
+    font-style: normal;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #7D7987;
+}
+
+.destinations-block {
+    padding-top: 18.25vw;
+}
+
+.guides-block {
+    padding-top: 14.44vw;
+}
+
+.testimonials-block {
+    padding-top: 15.5vw;
+}
+
+.text-10 {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.trending-block {
+    padding-top: 17.81vw;
+}
+
+.footer {
+    width: 100vw;
+    padding-top: 12vw;
+}
+
+.text-14, .text-15 {
+    line-height: 28px;
+}
+
+.text-16 {
+    line-height: 38px;
+}
+
+a:link {
+    color: #848484;
+    text-decoration: none;
 }
 
 
-.first_main_sect,.sec_main_sect {
-    display: flex; /* Используем flexbox для размещения элементов в ряд */
-    width: 100%; /* Устанавливаем ширину на 100% */
-    padding: 0; /* Убираем внутренние отступы */
-    box-sizing: border-box; /* Учитываем границы и отступы в общей ширине */
+.org {
+    --bs-btn-font-weight: 500;
+    --bs-btn-line-height: 44px;
+    --bs-btn-font-family: Inter;
+    --bs-btn-color: orange;
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: orange;
+    --bs-btn-padding-x: 46px;
+    --bs-btn-padding-y: 0px;
+    --bs-btn-hover-border-color: orange;
+    --bs-btn-hover-color: orange;
+    --bs-btn-border-radius: 5px;
 }
 
-.image_container {
-    flex: 1; /* Размер изображения занимает 1/3 ширины секции */
+
+.dr{
+    --bs-btn-font-weight: 400;
+    --bs-btn-font-size: 15px;
+    --bs-btn-line-height: 44px;
+    --bs-btn-font-family: Inter;
+    --bs-btn-color: #4A4C53;
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color:#AFB0B9;
+    --bs-btn-padding-x: 45px;
+    --bs-btn-padding-y: 0px;
+    --bs-btn-border-radius: 5px;
+    --bs-btn-disabled-border-color: #AFB0B9;
+    --bs-btn-hover-border-color: #AFB0B9;
 }
 
-.image_container img {
-    max-width: 100%; /* Изображение не будет превышать размеры контейнера */
-}
-
-.text_content {
-    flex: 2; /* Размер текстового блока занимает 2/3 ширины секции */
-}
-
-.text_content h2 {
-    margin-top: 0; /* Убираем верхний отступ у заголовка */
-    font-size: 36px;
-}
-.clear{
-    clear: both;
-    margin-bottom: 270px;
-}
-
-.sec_main_sect{
-    margin-left: 50px;
-}
-.block{
-    width: 480px;
-}
-.block1 {
-    margin-right: 15px; 
-}
-
-.img_portret{
-    width: 180px;
-    height: auto;
-}
-
-.pats{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.sizeimg {
-    width: 200px; /* Ширина, которую вы хотите установить для всех изображений */
-    height: 200px; /* Высота, которую вы хотите установить для всех изображений */
-    overflow: hidden; /* Обрезать изображения, если они превышают установленные размеры */
-}
-
-.sizeimg img {
-    width: 100%; /* Сделать изображение 100% ширины контейнера */
-    height: auto; /* Автоматически масштабировать высоту для поддержки пропорций */
-}
-
-.col {
-    margin-bottom: 20px; /* Добавить немного отступа между карточками */
-}
-
-h3 {
-    margin-top: 10px; /* Добавить немного отступа над заголовком */
-}
-
-p, a {
-    margin-bottom: 10px; /* Добавить немного отступа между текстом и ссылкой "Learn More" */
+.bbb{
+    --bs-btn-font-weight: 400;
+    --bs-btn-font-size: 15px;
+    --bs-btn-line-height: 44px;
+    --bs-btn-font-family: Inter;
+    --bs-btn-color: #4A4C53;
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color:#AFB0B9;
+    --bs-btn-padding-x: 31px;
+    --bs-btn-padding-y: 0px;
+    --bs-btn-border-radius: 5px;
+    --bs-btn-disabled-border-color: #AFB0B9;
+    --bs-btn-hover-border-color: #AFB0B9;
 }
